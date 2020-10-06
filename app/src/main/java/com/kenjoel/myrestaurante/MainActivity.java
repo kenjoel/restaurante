@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, RestaurantsActivity.class);
                 intent.putExtra("location", location);
                 startActivity(intent);
-//                Toast.makeText(MainActivity.this, location, Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, location, Toast.LENGTH_LONG).show();
 
             }
         });

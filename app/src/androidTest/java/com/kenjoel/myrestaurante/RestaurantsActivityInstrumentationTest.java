@@ -4,6 +4,9 @@ import android.view.View;
 
 import androidx.test.rule.ActivityTestRule;
 import androidx.test.runner.AndroidJUnit4;
+
+import com.kenjoel.myrestaurante.ui.RestaurantListActivity;
+
 import static androidx.test.espresso.Espresso.onData;
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
@@ -22,8 +25,8 @@ import org.junit.runner.RunWith;
 public class RestaurantsActivityInstrumentationTest {
 
     @Rule
-    public ActivityTestRule<RestaurantsActivity> activityTestRule =
-            new ActivityTestRule<>(RestaurantsActivity.class);
+    public ActivityTestRule<RestaurantListActivity> activityTestRule =
+            new ActivityTestRule<>(RestaurantListActivity.class);
 
     @Test
     public void listItemClickDisplaysToastWithCorrectRestaurant() {
